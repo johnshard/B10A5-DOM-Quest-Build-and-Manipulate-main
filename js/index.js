@@ -15,18 +15,21 @@ const quotaDonationAmount = document.getElementById("quota-donation-amount")
 document.getElementById("btn-noakhali-amount").addEventListener("click", function () {
   donateAmountById("input-noakhali-amount", "noakhali-donation-amount")
   createHistoryComponent("input-noakhali-amount", "Noakhali")
+  totalAmountDeduction("input-noakhali-amount")
 })
 
 // Feni donation
 document.getElementById("btn-feni-amount").addEventListener("click", function () {
   donateAmountById("input-feni-amount", "feni-donation-amount")
   createHistoryComponent("input-feni-amount", "Feni")
+  totalAmountDeduction("input-feni-amount")
 })
 
 // Quota donation
 document.getElementById("btn-quota-amount").addEventListener("click", function () {
   donateAmountById("input-quota-amount", "quota-donation-amount")
   createHistoryComponent("input-quota-amount", "Quote")
+  totalAmountDeduction('"input-quota-amount"')
 })
 
 function donateAmountById(inputValue, totalAmount) {

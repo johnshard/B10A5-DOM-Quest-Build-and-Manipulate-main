@@ -9,6 +9,8 @@ const historyContent = document.getElementById("history-content")
 const inputNoakhaliAmount = inputValueAmount("input-noakhali-amount")
 
 function createHistoryComponent(inputAmount, district) {
+  const amount = document.getElementById(inputAmount).value
+  console.log(amount)
   // create div
   const div = document.createElement("div")
   div.classList.add("card", "bg-base-100", "w-full", "shadow-xl", "mt-8", "border")
@@ -19,7 +21,7 @@ function createHistoryComponent(inputAmount, district) {
   // creating h2
   const h2 = document.createElement("h2")
   h2.classList.add("card-title")
-  h2.innerText = `${inputAmount} Taka is Donated for Flood at ${district}, Bangladesh`
+  h2.innerText = `${amount} Taka is Donated for Flood at ${district}, Bangladesh`
 
   //creating p
   const p = document.createElement("p")
