@@ -14,5 +14,5 @@ function totalAmountDeduction(inputValue) {
   const inputAmount = inputValueAmount(inputValue)
   const newAmount = totalAmountDeduct - inputAmount
 
-  document.getElementById("total-deduction").innerText = newAmount
+  document.getElementById("total-deduction").innerText = parseFloat(newAmount)
 }

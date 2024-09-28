@@ -29,7 +29,7 @@ document.getElementById("btn-feni-amount").addEventListener("click", function ()
 document.getElementById("btn-quota-amount").addEventListener("click", function () {
   donateAmountById("input-quota-amount", "quota-donation-amount")
   createHistoryComponent("input-quota-amount", "Quote")
-  totalAmountDeduction('"input-quota-amount"')
+  totalAmountDeduction("input-quota-amount")
 })
 
 function donateAmountById(inputValue, totalAmount) {
